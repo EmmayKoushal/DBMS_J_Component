@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FRESH MARKET</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        @font-face {
+            font-family: 'leafs';
+            src: url('fonts/leafs-Regular.otf');
+        }
+        @font-face {
+            font-family: 'Keyzha';
+            src: url('fonts/KEYZHA\ 400.otf');
+        }
+        @font-face {
+            font-family: 'Blank Note';
+            src: url('fonts/BlankNote-Regular.otf');
+        }
+        @font-face {
+            font-family: 'South Australia';
+            src: url('fonts/SouthAustralia-Regular.otf');
+        }
+        @font-face {
+            font-family: 'Warton';
+            src: url('fonts/Warton-Regular.otf');
+        }
+        @font-face {
+            font-family: 'Camellio';
+            src: url('fonts/Camellio-Regular.otf');
+        }
+        @font-face {
+                font-family: 'Woodstick';
+                src: url('fonts/Woodstick-Regular.otf');
+        }
+        .navbar{
+            width: 100%;
+            height: 790px;
+        }
+        .logo{
+            width: 95px;
+            height: 100px;
+            position: absolute;
+            top: 4%;
+            left: 2%;
+        }
+        .navs{
+            float: right;
+            list-style-type: none;
+            position: absolute;
+            top: 4%;
+            left: 57%;
+        }
+        .navs li{
+            display: inline;
+            padding: 10px;
+            margin: 10px;
+        }
+        .navs li a{
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 25px;
+            transition: 0.5s;
+            font-size: large;
+            font-family: 'Girassol', cursive;
+            font-weight: bold;
+        }
+        .navs li a:hover{
+            background-color: #273c75;
+            color: white;
+        }
+        .content{
+            position: absolute;
+            top: 30%;
+            left: 2%;
+            /*font-family: 'Blank Note';*/
+            color: black;
+            font-size: 25px;
+        }
+        .btn{
+            background: transparent;
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 25px;
+            position: absolute;
+            top: 95%;
+            left: 40%;
+            transition: 0.5s;
+            /* font-family: 'Girassol', cursive; */
+            font-size: xx-large;
+        }
+        .btn:hover{
+            background-color: #273c75;
+            color: white;
+        }
+        section
+        {
+            position:absolute;
+            display: flex;
+            justify-content:left;
+            align-items:left;
+            /*min-height:100vh;*/
+            top:25%;
+            left:3%;
+        }
+        section::before
+        {
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:50%;
+            height:100%;
+        }
+        section .container
+        {
+            position:absolute;
+            min-width:1100px;
+            min-height:550px;
+            display:flex;
+            z-index:1000;
+            top:25%;
+            left:3%;
+        }
+        section .container.contactinfo
+        {
+            position: absolute;
+            top:40px;
+            width:350px;
+            height:calc(100% - 80px);
+            z-index:1;
+            padding: 40px;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+        }
+        section .container.contactinfo h2
+        {
+            color: #fff;
+            font-size:50px;
+            font-weight: 500;
+        }
+        section .container.contactinfo .container.contactinfo
+        {
+            position: absolute;
+            top:0%;
+            left:3%;
+            margin:20px 0;
+        }
+        section .container.contactinfo .info li
+        {
+            position: absolute;
+            list-style: none;
+            display:flex;
+            margin:20px 0;
+            cursor:pointer;
+            align-items:left;
+        }
+        section .container.contactinfo .info li span:nth-child(1)
+        {
+            width:30px;
+            min-width: 30px;
+        }
+        section .container.contactinfo .info li span:nth-child(1)img{
+            max-width:100%;
+            filter:invert(1);
+            opacity:0.5;
+        }
+        section .container.contactinfo .info li span:nth-child(2)
+        {
+            color:#fff;
+            margin-left: 10px;
+            font-weight: 300;
+        }
+        section .container.contactinfo .info li:hover span:nth-child(1)img,
+        section .container.contactinfo .info li:hover span:nth-child(2)
+        {
+            opacity: 1;
+        }
+        .add{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="pictures/logo.png" alt="" class="logo">
+        <h2 style="display: inline;position: absolute;top: 4%;left: 10%;font-size: 48px;font-family: 'leafs';color: #44bd32;">Fresh Market</h2>
+        <ul class="navs">
+            <li><a href="about.html" target="_blank">About Us</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="login.php" style="background-color: #44bd32;color: white;padding: 11px;font-weight: lighter;">SignUp/Login</a></li>
+        </ul>
+    </div>
+<div class="pic">
+    <img src="pictures/pic1.png" alt="" style="position: absolute;top: 8%;right: 2%;">
+    <section>
+    <div class="container">
+        <div class="contactinfo">
+            <div>
+                <h1 style="position:absolute;top:0%;left:0%;color:#ff5252;font-size:60px;font-family: 'Roboto', sans-serif;">Contact Info</h1><br><br><br><br><br><br><br>
+                <ul class="info" style="list-style-type: none;">
+                    <li>
+                        <span><img src="pictures/picture1.png" class="add"></span>
+                        <span style="font-size:40px;">Fresh Market Plot No.455,<br>
+                            Aparna Hillpark Rd,White field,<br>
+                            (opp to jayadarshin apartment)<br>
+                            Kondapur,Hyderbad-500084
+                        </span>
+                        <br><br><br>
+                    </li>
+                    <li>
+                        <span><img src="pictures/picture2.png" class="add"></span>
+                        <span style="font-size:40px;">Fresh Market@gmail.com </span>
+                        <br><br><br>
+                    </li>
+                    <li>
+                        <span><img src="pictures/picture3.png" class="add"></span>
+                        <span style="font-size:40px;">+91 9100 327 777</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>  
+    
+    
